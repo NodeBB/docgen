@@ -1,3 +1,5 @@
+"use strict";
+
 var sys = require('sys'),
 	exec = require('child_process').exec,
 	child,
@@ -26,14 +28,32 @@ function run(command, next) {
 }
 
 
+function generateDocs(cb) {
+	var curr = __dirname;
+
+	var commands = [
+		'cd ' + nconf.get('path') + ' && git pull',
+		'cd ' + nconf.get('docs') + ' && git pull',
+		'node main.js',
+		'cd ' + nconf.get('docs') + ' && git commit -am "automatic doc generation" && git push',
+	];
+
+	async.eachSeries(commands, run, cb);
+}
+
 setup();
-var curr = __dirname;
 
-var commands = [
-	'cd ' + nconf.get('path') + ' && git pull',
-	'cd ' + nconf.get('docs') + ' && git pull',
-	'node main.js',
-	'cd ' + nconf.get('docs') + ' && git commit -am "automatic doc generation" && git push',
-];
+var express = require('express');
+var app = express();
 
-async.eachSeries(commands, run);
+app.post('/push', function (req, res) {
+	generateDocs(function(err) {
+		res.json({status: 200, error: err});
+	});
+});
+
+var server = app.listen(5000, function () {
+	var host = server.address().address;
+	var port = server.address().port;
+	console.log('Service listening at http://%s:%s', host, port);
+});
