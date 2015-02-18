@@ -10,7 +10,7 @@
 
 ## favourites
 
-['action:post.' + hook](https://github.com/NodeBB/NodeBB/blob/master/src/favourites.js#L173)
+['action:post.*'](https://github.com/NodeBB/NodeBB/blob/master/src/favourites.js#L173)
 
 ## groups
 
@@ -88,7 +88,7 @@
 
 ## widgets
 
-['filter:widget.render:' + widget.widget](https://github.com/NodeBB/NodeBB/blob/master/src/widgets.js#L37)
+['filter:widget.render:*'](https://github.com/NodeBB/NodeBB/blob/master/src/widgets.js#L37)
 ['filter:widgets.getAreas'](https://github.com/NodeBB/NodeBB/blob/master/src/widgets.js#L128)
 
 ## categories/topics
@@ -161,8 +161,9 @@
 
 ## plugins/install
 
-[isActive ? 'action:plugin.deactivate' : 'action:plugin.activate'](https://github.com/NodeBB/NodeBB/blob/master/src/plugins/install.js#L44)
-['action:plugin.' + type](https://github.com/NodeBB/NodeBB/blob/master/src/plugins/install.js#L90)
+['action:plugin.deactivate'](https://github.com/NodeBB/NodeBB/blob/master/src/plugins/install.js#L44)
+['action:plugin.activate'](https://github.com/NodeBB/NodeBB/blob/master/src/plugins/install.js#L44)
+['action:plugin.*'](https://github.com/NodeBB/NodeBB/blob/master/src/plugins/install.js#L90)
 
 ## posts/create
 
@@ -219,7 +220,7 @@
 ## socket.io/posts
 
 ['filter:sockets.sendNewPostToUids'](https://github.com/NodeBB/NodeBB/blob/master/src/socket.io/posts.js#L64)
-['filter:post.' + command](https://github.com/NodeBB/NodeBB/blob/master/src/socket.io/posts.js#L184)
+['filter:post.*'](https://github.com/NodeBB/NodeBB/blob/master/src/socket.io/posts.js#L184)
 
 ## socket.io/topics
 
@@ -228,7 +229,7 @@
 ## socket.io/user
 
 ['filter:uploadImage'](https://github.com/NodeBB/NodeBB/blob/master/src/socket.io/user.js#L268)
-['action:user.' + method](https://github.com/NodeBB/NodeBB/blob/master/src/socket.io/user.js#L321)
+['action:user.*'](https://github.com/NodeBB/NodeBB/blob/master/src/socket.io/user.js#L321)
 
 ## topics/create
 
