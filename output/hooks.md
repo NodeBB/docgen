@@ -224,6 +224,15 @@
 [filter:sounds.get](https://github.com/NodeBB/NodeBB/blob/master/src/meta/sounds.js#L22)
 
 
+## plugins/install
+
+[action:plugin.deactivate](https://github.com/NodeBB/NodeBB/blob/master/src/plugins/install.js#L45)
+
+[action:plugin.activate](https://github.com/NodeBB/NodeBB/blob/master/src/plugins/install.js#L45)
+
+[action:plugin.*](https://github.com/NodeBB/NodeBB/blob/master/src/plugins/install.js#L91)
+
+
 ## middleware/admin
 
 [filter:admin.scripts.get](https://github.com/NodeBB/NodeBB/blob/master/src/middleware/admin.js#L52)
@@ -236,13 +245,15 @@
 [filter:header.build](https://github.com/NodeBB/NodeBB/blob/master/src/middleware/middleware.js#L222)
 
 
-## plugins/install
+## routes/authentication
 
-[action:plugin.deactivate](https://github.com/NodeBB/NodeBB/blob/master/src/plugins/install.js#L45)
+[filter:auth.init](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L40)
 
-[action:plugin.activate](https://github.com/NodeBB/NodeBB/blob/master/src/plugins/install.js#L45)
+[action:user.loggedIn](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L180)
 
-[action:plugin.*](https://github.com/NodeBB/NodeBB/blob/master/src/plugins/install.js#L91)
+[filter:register.check](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L231)
+
+[filter:register.complete](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L245)
 
 
 ## posts/create
@@ -273,23 +284,6 @@
 [filter:posts.custom_profile_info](https://github.com/NodeBB/NodeBB/blob/master/src/posts/user.js#L56)
 
 [filter:posts.modifyUserInfo](https://github.com/NodeBB/NodeBB/blob/master/src/posts/user.js#L66)
-
-
-## privileges/categories
-
-[filter:privileges.categories.get](https://github.com/NodeBB/NodeBB/blob/master/src/privileges/categories.js#L37)
-
-
-## privileges/topics
-
-[filter:privileges.topics.get](https://github.com/NodeBB/NodeBB/blob/master/src/privileges/topics.js#L44)
-
-[filter:privileges.topics.filter](https://github.com/NodeBB/NodeBB/blob/master/src/privileges/topics.js#L93)
-
-
-## privileges/posts
-
-[filter:privileges.posts.filter](https://github.com/NodeBB/NodeBB/blob/master/src/privileges/posts.js#L99)
 
 
 ## socket.io/admin
@@ -325,17 +319,6 @@
 [filter:uploadImage](https://github.com/NodeBB/NodeBB/blob/master/src/socket.io/user.js#L269)
 
 [action:user.*](https://github.com/NodeBB/NodeBB/blob/master/src/socket.io/user.js#L322)
-
-
-## routes/authentication
-
-[filter:auth.init](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L40)
-
-[action:user.loggedIn](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L180)
-
-[filter:register.check](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L231)
-
-[filter:register.complete](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L245)
 
 
 ## topics/create
@@ -399,6 +382,23 @@
 [filter:user.getSettings](https://github.com/NodeBB/NodeBB/blob/master/src/user/settings.js#L51)
 
 [action:user.saveSettings](https://github.com/NodeBB/NodeBB/blob/master/src/user/settings.js#L87)
+
+
+## privileges/categories
+
+[filter:privileges.categories.get](https://github.com/NodeBB/NodeBB/blob/master/src/privileges/categories.js#L37)
+
+
+## privileges/posts
+
+[filter:privileges.posts.filter](https://github.com/NodeBB/NodeBB/blob/master/src/privileges/posts.js#L99)
+
+
+## privileges/topics
+
+[filter:privileges.topics.get](https://github.com/NodeBB/NodeBB/blob/master/src/privileges/topics.js#L44)
+
+[filter:privileges.topics.filter](https://github.com/NodeBB/NodeBB/blob/master/src/privileges/topics.js#L93)
 
 
 ## controllers/admin/uploads
@@ -515,4 +515,4 @@
 [action:posts.loaded](https://github.com/NodeBB/NodeBB/blob/master/public/src/client/topic/posts.js#L137)
 
 
-**Total Hooks: 154
+**Total Hooks: 154**
