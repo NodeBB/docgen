@@ -32,3 +32,5 @@ pidfile
 /public/admin.css
 /public/nodebb.min.js
 /public/nodebb.min.js.map
+
+output

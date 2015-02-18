@@ -149,66 +149,6 @@
 [filter:category.topics.get](https://github.com/NodeBB/NodeBB/blob/master/src/categories/topics.js#L39)
 
 
-## controllers/accounts
-
-[filter:user.profileLinks](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/accounts.js#L52)
-
-[filter:user.account](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/accounts.js#L174)
-
-[filter:user.profileLinks](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/accounts.js#L299)
-
-[filter:user.settings](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/accounts.js#L356)
-
-[filter:uploadImage](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/accounts.js#L450)
-
-
-## controllers/admin
-
-[filter:admin.notices](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/admin.js#L56)
-
-[filter:widgets.getAreas](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/admin.js#L251)
-
-[filter:widgets.getWidgets](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/admin.js#L254)
-
-
-## controllers/categories
-
-[filter:category.build](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/categories.js#L336)
-
-
-## controllers/index
-
-[filter:register.build](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/index.js#L109)
-
-
-## controllers/search
-
-[filter:search.build](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/search.js#L36)
-
-[filter:search.build](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/search.js#L79)
-
-
-## controllers/templates
-
-[filter:templates.get_config](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/templates.js#L29)
-
-[filter:templates.get_virtual](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/templates.js#L70)
-
-
-## controllers/topics
-
-[filter:controllers.topic.get](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/topics.js#L131)
-
-[filter:topic.build](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/topics.js#L270)
-
-
-## controllers/uploads
-
-[filter:uploadImage](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/uploads.js#L81)
-
-[filter:uploadFile](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/uploads.js#L93)
-
-
 ## meta/js
 
 [filter:scripts.get](https://github.com/NodeBB/NodeBB/blob/master/src/meta/js.js#L235)
@@ -224,15 +164,6 @@
 [filter:sounds.get](https://github.com/NodeBB/NodeBB/blob/master/src/meta/sounds.js#L22)
 
 
-## plugins/install
-
-[action:plugin.deactivate](https://github.com/NodeBB/NodeBB/blob/master/src/plugins/install.js#L45)
-
-[action:plugin.activate](https://github.com/NodeBB/NodeBB/blob/master/src/plugins/install.js#L45)
-
-[action:plugin.*](https://github.com/NodeBB/NodeBB/blob/master/src/plugins/install.js#L91)
-
-
 ## middleware/admin
 
 [filter:admin.scripts.get](https://github.com/NodeBB/NodeBB/blob/master/src/middleware/admin.js#L52)
@@ -245,15 +176,30 @@
 [filter:header.build](https://github.com/NodeBB/NodeBB/blob/master/src/middleware/middleware.js#L222)
 
 
-## routes/authentication
+## plugins/install
 
-[filter:auth.init](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L40)
+[action:plugin.deactivate](https://github.com/NodeBB/NodeBB/blob/master/src/plugins/install.js#L45)
 
-[action:user.loggedIn](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L180)
+[action:plugin.activate](https://github.com/NodeBB/NodeBB/blob/master/src/plugins/install.js#L45)
 
-[filter:register.check](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L231)
+[action:plugin.*](https://github.com/NodeBB/NodeBB/blob/master/src/plugins/install.js#L91)
 
-[filter:register.complete](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L245)
+
+## privileges/categories
+
+[filter:privileges.categories.get](https://github.com/NodeBB/NodeBB/blob/master/src/privileges/categories.js#L37)
+
+
+## privileges/posts
+
+[filter:privileges.posts.filter](https://github.com/NodeBB/NodeBB/blob/master/src/privileges/posts.js#L99)
+
+
+## privileges/topics
+
+[filter:privileges.topics.get](https://github.com/NodeBB/NodeBB/blob/master/src/privileges/topics.js#L44)
+
+[filter:privileges.topics.filter](https://github.com/NodeBB/NodeBB/blob/master/src/privileges/topics.js#L93)
 
 
 ## posts/create
@@ -284,6 +230,17 @@
 [filter:posts.custom_profile_info](https://github.com/NodeBB/NodeBB/blob/master/src/posts/user.js#L56)
 
 [filter:posts.modifyUserInfo](https://github.com/NodeBB/NodeBB/blob/master/src/posts/user.js#L66)
+
+
+## routes/authentication
+
+[filter:auth.init](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L40)
+
+[action:user.loggedIn](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L180)
+
+[filter:register.check](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L231)
+
+[filter:register.complete](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L245)
 
 
 ## socket.io/admin
@@ -321,34 +278,6 @@
 [action:user.*](https://github.com/NodeBB/NodeBB/blob/master/src/socket.io/user.js#L322)
 
 
-## topics/create
-
-[action:topic.save](https://github.com/NodeBB/NodeBB/blob/master/src/topics/create.js#L87)
-
-[filter:topic.post](https://github.com/NodeBB/NodeBB/blob/master/src/topics/create.js#L131)
-
-[action:topic.post](https://github.com/NodeBB/NodeBB/blob/master/src/topics/create.js#L170)
-
-[filter:topic.reply](https://github.com/NodeBB/NodeBB/blob/master/src/topics/create.js#L220)
-
-
-## topics/delete
-
-[action:topic.purge](https://github.com/NodeBB/NodeBB/blob/master/src/topics/delete.js#L71)
-
-
-## topics/fork
-
-[action:post.move](https://github.com/NodeBB/NodeBB/blob/master/src/topics/fork.js#L121)
-
-
-## topics/tags
-
-[filter:tags.filter](https://github.com/NodeBB/NodeBB/blob/master/src/topics/tags.js#L21)
-
-[filter:tags.search](https://github.com/NodeBB/NodeBB/blob/master/src/topics/tags.js#L275)
-
-
 ## user/create
 
 [filter:user.custom_fields](https://github.com/NodeBB/NodeBB/blob/master/src/user/create.js#L57)
@@ -384,21 +313,92 @@
 [action:user.saveSettings](https://github.com/NodeBB/NodeBB/blob/master/src/user/settings.js#L87)
 
 
-## privileges/categories
+## topics/create
 
-[filter:privileges.categories.get](https://github.com/NodeBB/NodeBB/blob/master/src/privileges/categories.js#L37)
+[action:topic.save](https://github.com/NodeBB/NodeBB/blob/master/src/topics/create.js#L87)
+
+[filter:topic.post](https://github.com/NodeBB/NodeBB/blob/master/src/topics/create.js#L131)
+
+[action:topic.post](https://github.com/NodeBB/NodeBB/blob/master/src/topics/create.js#L170)
+
+[filter:topic.reply](https://github.com/NodeBB/NodeBB/blob/master/src/topics/create.js#L220)
 
 
-## privileges/posts
+## topics/delete
 
-[filter:privileges.posts.filter](https://github.com/NodeBB/NodeBB/blob/master/src/privileges/posts.js#L99)
+[action:topic.purge](https://github.com/NodeBB/NodeBB/blob/master/src/topics/delete.js#L71)
 
 
-## privileges/topics
+## topics/fork
 
-[filter:privileges.topics.get](https://github.com/NodeBB/NodeBB/blob/master/src/privileges/topics.js#L44)
+[action:post.move](https://github.com/NodeBB/NodeBB/blob/master/src/topics/fork.js#L121)
 
-[filter:privileges.topics.filter](https://github.com/NodeBB/NodeBB/blob/master/src/privileges/topics.js#L93)
+
+## topics/tags
+
+[filter:tags.filter](https://github.com/NodeBB/NodeBB/blob/master/src/topics/tags.js#L21)
+
+[filter:tags.search](https://github.com/NodeBB/NodeBB/blob/master/src/topics/tags.js#L275)
+
+
+## controllers/accounts
+
+[filter:user.profileLinks](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/accounts.js#L52)
+
+[filter:user.account](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/accounts.js#L174)
+
+[filter:user.profileLinks](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/accounts.js#L299)
+
+[filter:user.settings](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/accounts.js#L356)
+
+[filter:uploadImage](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/accounts.js#L450)
+
+
+## controllers/admin
+
+[filter:admin.notices](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/admin.js#L56)
+
+[filter:widgets.getAreas](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/admin.js#L251)
+
+[filter:widgets.getWidgets](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/admin.js#L254)
+
+
+## controllers/categories
+
+[filter:category.build](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/categories.js#L336)
+
+
+## controllers/search
+
+[filter:search.build](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/search.js#L36)
+
+[filter:search.build](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/search.js#L79)
+
+
+## controllers/index
+
+[filter:register.build](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/index.js#L109)
+
+
+## controllers/templates
+
+[filter:templates.get_config](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/templates.js#L29)
+
+[filter:templates.get_virtual](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/templates.js#L70)
+
+
+## controllers/topics
+
+[filter:controllers.topic.get](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/topics.js#L131)
+
+[filter:topic.build](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/topics.js#L270)
+
+
+## controllers/uploads
+
+[filter:uploadImage](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/uploads.js#L81)
+
+[filter:uploadFile](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/uploads.js#L93)
 
 
 ## controllers/admin/uploads
@@ -445,18 +445,6 @@
 [action:widgets.loaded](https://github.com/NodeBB/NodeBB/blob/master/public/src/widgets.js#L74)
 
 
-## modules/chat
-
-[action:chat.loaded](https://github.com/NodeBB/NodeBB/blob/master/public/src/modules/chat.js#L289)
-
-
-## modules/composer
-
-[action:composer.loaded](https://github.com/NodeBB/NodeBB/blob/master/public/src/modules/composer.js#L318)
-
-[action:composer.*](https://github.com/NodeBB/NodeBB/blob/master/public/src/modules/composer.js#L472)
-
-
 ## client/categories
 
 [action:posts.loaded](https://github.com/NodeBB/NodeBB/blob/master/public/src/client/categories.js#L61)
@@ -485,14 +473,16 @@
 [action:topic.loaded](https://github.com/NodeBB/NodeBB/blob/master/public/src/client/topic.js#L60)
 
 
-## modules/composer/preview
+## modules/chat
 
-[action:composer.preview](https://github.com/NodeBB/NodeBB/blob/master/public/src/modules/composer/preview.js#L27)
+[action:chat.loaded](https://github.com/NodeBB/NodeBB/blob/master/public/src/modules/chat.js#L289)
 
 
-## modules/composer/tags
+## modules/composer
 
-[action:tag.added](https://github.com/NodeBB/NodeBB/blob/master/public/src/modules/composer/tags.js#L31)
+[action:composer.loaded](https://github.com/NodeBB/NodeBB/blob/master/public/src/modules/composer.js#L318)
+
+[action:composer.*](https://github.com/NodeBB/NodeBB/blob/master/public/src/modules/composer.js#L472)
 
 
 ## client/account/topics
@@ -515,4 +505,15 @@
 [action:posts.loaded](https://github.com/NodeBB/NodeBB/blob/master/public/src/client/topic/posts.js#L137)
 
 
-**Total Hooks: 154**
+## modules/composer/preview
+
+[action:composer.preview](https://github.com/NodeBB/NodeBB/blob/master/public/src/modules/composer/preview.js#L27)
+
+
+## modules/composer/tags
+
+[action:tag.added](https://github.com/NodeBB/NodeBB/blob/master/public/src/modules/composer/tags.js#L31)
+
+
+**Total Hooks: undefined**
+**This page was generated on Wed, 18 Feb 2015 20:40:19 GMT
