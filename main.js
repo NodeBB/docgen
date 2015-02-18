@@ -15,6 +15,12 @@ function setup() {
 		});
 
 	searcher.init(function(data) {
+		if (data.match('nodebb.min.js')) {
+			return;
+		}
+
+		console.log(data);
+
 		reader.read(data);
 	});
 }
