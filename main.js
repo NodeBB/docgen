@@ -19,8 +19,6 @@ function setup() {
 			return;
 		}
 
-		console.log(data);
-
 		reader.read(data);
 	});
 }
