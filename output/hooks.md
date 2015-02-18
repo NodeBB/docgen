@@ -142,6 +142,13 @@
 [filter:widgets.getAreas](https://github.com/NodeBB/NodeBB/blob/master/src/widgets.js#L129)
 
 
+## categories/topics
+
+[filter:category.topics.prepare](https://github.com/NodeBB/NodeBB/blob/master/src/categories/topics.js#L22)
+
+[filter:category.topics.get](https://github.com/NodeBB/NodeBB/blob/master/src/categories/topics.js#L39)
+
+
 ## controllers/accounts
 
 [filter:user.profileLinks](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/accounts.js#L52)
@@ -200,13 +207,6 @@
 [filter:uploadImage](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/uploads.js#L81)
 
 [filter:uploadFile](https://github.com/NodeBB/NodeBB/blob/master/src/controllers/uploads.js#L93)
-
-
-## categories/topics
-
-[filter:category.topics.prepare](https://github.com/NodeBB/NodeBB/blob/master/src/categories/topics.js#L22)
-
-[filter:category.topics.get](https://github.com/NodeBB/NodeBB/blob/master/src/categories/topics.js#L39)
 
 
 ## meta/js
@@ -275,25 +275,9 @@
 [filter:posts.modifyUserInfo](https://github.com/NodeBB/NodeBB/blob/master/src/posts/user.js#L66)
 
 
-## routes/authentication
-
-[filter:auth.init](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L40)
-
-[action:user.loggedIn](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L180)
-
-[filter:register.check](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L231)
-
-[filter:register.complete](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L245)
-
-
 ## privileges/categories
 
 [filter:privileges.categories.get](https://github.com/NodeBB/NodeBB/blob/master/src/privileges/categories.js#L37)
-
-
-## privileges/posts
-
-[filter:privileges.posts.filter](https://github.com/NodeBB/NodeBB/blob/master/src/privileges/posts.js#L99)
 
 
 ## privileges/topics
@@ -301,6 +285,11 @@
 [filter:privileges.topics.get](https://github.com/NodeBB/NodeBB/blob/master/src/privileges/topics.js#L44)
 
 [filter:privileges.topics.filter](https://github.com/NodeBB/NodeBB/blob/master/src/privileges/topics.js#L93)
+
+
+## privileges/posts
+
+[filter:privileges.posts.filter](https://github.com/NodeBB/NodeBB/blob/master/src/privileges/posts.js#L99)
 
 
 ## socket.io/admin
@@ -336,6 +325,17 @@
 [filter:uploadImage](https://github.com/NodeBB/NodeBB/blob/master/src/socket.io/user.js#L269)
 
 [action:user.*](https://github.com/NodeBB/NodeBB/blob/master/src/socket.io/user.js#L322)
+
+
+## routes/authentication
+
+[filter:auth.init](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L40)
+
+[action:user.loggedIn](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L180)
+
+[filter:register.check](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L231)
+
+[filter:register.complete](https://github.com/NodeBB/NodeBB/blob/master/src/routes/authentication.js#L245)
 
 
 ## topics/create
@@ -445,6 +445,18 @@
 [action:widgets.loaded](https://github.com/NodeBB/NodeBB/blob/master/public/src/widgets.js#L74)
 
 
+## modules/chat
+
+[action:chat.loaded](https://github.com/NodeBB/NodeBB/blob/master/public/src/modules/chat.js#L289)
+
+
+## modules/composer
+
+[action:composer.loaded](https://github.com/NodeBB/NodeBB/blob/master/public/src/modules/composer.js#L318)
+
+[action:composer.*](https://github.com/NodeBB/NodeBB/blob/master/public/src/modules/composer.js#L472)
+
+
 ## client/categories
 
 [action:posts.loaded](https://github.com/NodeBB/NodeBB/blob/master/public/src/client/categories.js#L61)
@@ -473,16 +485,14 @@
 [action:topic.loaded](https://github.com/NodeBB/NodeBB/blob/master/public/src/client/topic.js#L60)
 
 
-## modules/chat
+## modules/composer/preview
 
-[action:chat.loaded](https://github.com/NodeBB/NodeBB/blob/master/public/src/modules/chat.js#L289)
+[action:composer.preview](https://github.com/NodeBB/NodeBB/blob/master/public/src/modules/composer/preview.js#L27)
 
 
-## modules/composer
+## modules/composer/tags
 
-[action:composer.loaded](https://github.com/NodeBB/NodeBB/blob/master/public/src/modules/composer.js#L318)
-
-[action:composer.*](https://github.com/NodeBB/NodeBB/blob/master/public/src/modules/composer.js#L472)
+[action:tag.added](https://github.com/NodeBB/NodeBB/blob/master/public/src/modules/composer/tags.js#L31)
 
 
 ## client/account/topics
@@ -505,11 +515,4 @@
 [action:posts.loaded](https://github.com/NodeBB/NodeBB/blob/master/public/src/client/topic/posts.js#L137)
 
 
-## modules/composer/preview
-
-[action:composer.preview](https://github.com/NodeBB/NodeBB/blob/master/public/src/modules/composer/preview.js#L27)
-
-
-## modules/composer/tags
-
-[action:tag.added](https://github.com/NodeBB/NodeBB/blob/master/public/src/modules/composer/tags.js#L31)
+**Total Hooks: 154
