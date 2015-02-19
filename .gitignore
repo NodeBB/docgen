@@ -33,5 +33,5 @@ pidfile
 /public/nodebb.min.js
 /public/nodebb.min.js.map
 
-output
-input
+/output
+/input
