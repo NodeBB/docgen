@@ -30,8 +30,3 @@ git clone git@github.com:NodeBB/NodeBB.wiki.git output
 git clone git@github.com:NodeBB/NodeBB.git input
 node service.js
 ```
-
-todo
-----------
-
-Commit hook + auto update wiki page
