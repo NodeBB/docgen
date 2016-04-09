@@ -1,7 +1,6 @@
 "use strict";
 
-var sys = require('sys'),
-	exec = require('child_process').exec,
+var exec = require('child_process').exec,
 	child,
 	async = require('async'),
 	nconf = require('nconf');
@@ -17,8 +16,8 @@ function setup() {
 
 function run(command, next) {
 	child = exec(command, function (error, stdout, stderr) {
-		sys.print('stdout: ' + stdout);
-		sys.print('stderr: ' + stderr);
+		console.log('stdout:', stdout);
+		console.log('stderr:', stderr);
 		if (error !== null) {
 			console.log('exec error: ' + error);
 		}
