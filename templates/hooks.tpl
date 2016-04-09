@@ -49,6 +49,27 @@ $(window).on('action:ajaxify.end', function(event, data) {
 
 <!-- END client -->
 
+# Snippets
+
+## Explore all events
+
+Execute this snippet in your browser's JavaScript console (from tab with NodeBB) to receive debug messages, showing the fired event's data.
+
+```js
+[
+<!-- BEGIN client -->
+  <!-- BEGIN client.hooks -->
+  '{client.hooks.hook}'<!-- IF !@last -->, <!-- ENDIF !@last -->
+  <!-- END client.hooks -->
+<!-- END client -->
+].forEach(function(hook) {
+  $(window).on(hook, function(event, data) {
+    var tag = '[Hook Explorer] ' + event.type + '.' + event.namespace + ':';
+    console.debug(tag, data);
+  });
+});
+```
+
 
 **This page was generated on {date}**
 **Total Hooks: {hookCount}**
