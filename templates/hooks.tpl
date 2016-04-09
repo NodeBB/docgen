@@ -58,9 +58,7 @@ Execute this snippet in your browser's JavaScript console (from tab with NodeBB)
 ```js
 [
 <!-- BEGIN client -->
-  <!-- BEGIN client.hooks -->
-  '{client.hooks.hook}'<!-- IF !@last -->, <!-- ENDIF !@last -->
-  <!-- END client.hooks -->
+  <!-- BEGIN client.hooks -->'{client.hooks.hook}', <!-- END client.hooks -->
 <!-- END client -->
 ].forEach(function(hook) {
   $(window).on(hook, function(event, data) {
