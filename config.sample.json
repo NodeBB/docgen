@@ -1,3 +1,7 @@
 {
-	"path": "../NodeBB"
+	"path": "../NodeBB",
+  "output": {
+    "path": "output/",
+    "filename": "Hooks.md"
+  }
 }
