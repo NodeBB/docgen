@@ -53,7 +53,7 @@ app.post('/push', function (req, res) {
 });
 
 app.get('/hooks', function (req, res) {
-	res.json(require('./output.json').toString());
+	res.json(JSON.parse(require('./output.json').toString()));
 });
 
 var server = app.listen(5000, function () {
