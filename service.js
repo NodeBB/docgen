@@ -57,3 +57,11 @@ var server = app.listen(5000, function () {
 	var port = server.address().port;
 	console.log('Service listening at http://%s:%s', host, port);
 });
+
+generateDocs(function(err) {
+	if (err) {
+		return console.log(err);
+	}
+
+	console.log('Documenter initialized successfully.');
+});
