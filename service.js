@@ -52,7 +52,7 @@ app.post('/push', function (req, res) {
 	});
 });
 
-app.get('/hooks', function (req, res) {
+app.get('/', function (req, res) {
 	res.json(require('./output.json'));
 });
 
