@@ -31,6 +31,6 @@
     "event-stream": "^3.2.2",
     "async": "^0.9.0",
     "express": "^4.11.2",
-    "templates.js": "^0.1.16"
+    "templates.js": "^0.3.5"
   }
 }
