@@ -3,7 +3,7 @@
 
 # Server Side Hooks
 
-For further information [consult our documentation](https://docs.nodebb.org/en/latest/plugins/create.html) on how to build plugins.
+For further information [consult our documentation](https://docs.nodebb.org/development/plugins/) on how to build plugins.
 
 <!-- BEGIN server -->
 ## @key
