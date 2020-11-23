@@ -1,6 +1,6 @@
 {
   "name": "docgen",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Hooks documentation generator for NodeBB",
   "main": "main.js",
   "scripts": {
